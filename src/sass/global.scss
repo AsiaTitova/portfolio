@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  color: $black;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  @include container (900px , 0 auto);
+
+  // @media (max-width: 1199px) {
+  //   @include container (1024px , 0 auto);
+  // }
+
+  // @media (max-width: 1023px) {
+  //   @include container (768px , 0 auto);
+  // }
+
+  // @media (max-width: 767px) {
+  //   @include container (540px , 0 auto);
+  // }
+
+  // @media (max-width: 549px) {
+  //   @include container (480px , 0 auto);
+  // }
+
+  // @media (max-width: 479px) {
+  //   @include container (320px , 0 auto);
+  // }
+}

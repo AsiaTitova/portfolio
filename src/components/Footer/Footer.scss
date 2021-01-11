@@ -1,0 +1,26 @@
+@import "../../sass/variables.scss";
+
+.page-footer {
+  background-color: $dark-gray;
+}
+
+.page-footer__container {
+  padding: 60px 40px 60px 0;
+  margin-left: 300px;
+  background-color: $dark-gray;
+}
+
+.page-footer__copyright,
+.page-footer__tel,
+.page-footer__email {
+  display: block;
+  margin: 0 0 10px 0;
+  color: $white;
+  text-align: right;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-footer__copyright span {
+  color: $blue;
+}

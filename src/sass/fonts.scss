@@ -1,0 +1,20 @@
+@font-face {
+  font-display: swap;
+  font-family: "PT Sans";
+  src: local("PT Sans"), url("../assets/fonts/PTSans-Bold.woff2") format("woff2"), url("../assets/fonts/PTSans-Bold.woff")  format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "PT Sans";
+  src: local("PT Sans"), url("../assets/fonts/PTSans-Regular.woff2") format("woff2"), url("../assets/fonts/PTSans-Regular.woff")  format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "PT Mono";
+  src: local("PT Mono"), url("../assets/fonts/PTMono-Regular.woff2") format("woff2"), url("../assets/fonts/PTMono-Regular.woff")  format("woff");
+  font-weight: 400;
+}

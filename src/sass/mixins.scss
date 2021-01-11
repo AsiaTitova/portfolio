@@ -1,0 +1,17 @@
+@mixin container ($width, $margin) {
+  width: $width;
+  margin: $margin;
+}
+
+@mixin list-style ($list-style-type, $margin, $padding) {
+  list-style-type: $list-style-type;
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin pseudo ($content, $position, $width, $height) {
+  content: $content;
+  position: $position;
+  width: $width;
+  height: $height;
+}

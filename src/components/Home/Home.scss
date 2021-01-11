@@ -1,0 +1,56 @@
+@import "../../sass/variables.scss";
+
+.page-main__home {
+  margin-left: 300px;
+  min-height: 100%;
+  padding: 250px 40px;
+  // background-image: url("../../assets/img/background-home.png");
+  // background-repeat: no-repeat;
+  // background-position: 350px 0;
+  // background-size: 600px auto;
+}
+
+.home__title,
+.home__content {
+  text-transform: uppercase;
+}
+
+.home__title {
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 10px;
+  color: $dark-gray;
+}
+
+.home__content {
+  width: 220px;
+  font-size: 20px;
+  line-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid $black;
+  font-family: "PT Mono", "Arial", sans-serif;
+  animation:
+  typing 6.5s steps(30, end),
+  blink-caret 650ms step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 220px;
+  }
+}
+
+@keyframes blink-caret {
+  from {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: $black;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+.navigation {
+  @include list-style (none, 0, 0);
+  margin-left: 20px;
+}
+
+.navigation__item {
+  padding: 20px 0;
+}
+
+.navigation__link {
+  position: relative;
+  padding: 15px 0 15px 30px;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--active::before,
+  &:hover::before {
+    @include pseudo ("", absolute, 15px, 50px);
+    top: 0;
+    left: 0;
+    background-color: $blue;
+    animation-name: appearance;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes appearance {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
